@@ -2,7 +2,7 @@
 
 shortcut-cli is a simple shortcut cli to create a script as a short macro command in linux and darwin.
 
-##### How to install it or compile it from source?
+### How to install it or compile it from source?
 
   - For linux kernel: simply just download prebuilt binary (x86_64).
   - For darwin kernel (macOS): download this package installer and run it.
@@ -19,15 +19,19 @@ curl -s
 ```
 
 Build from source:
+
 > Install rust: https://www.rust-lang.org/tools/install
+
 > Make sure your are on rust toolchain latest stable.
+
 > Install GNU make.
+
 ```sh
 cd $shortcut-cli
 make
 ```
 
-##### How to use shortcut-cli?
+### How to use shortcut-cli?
 You can see list of subcommands:
 ```sh
 $ shortcut-cli macro
@@ -67,7 +71,7 @@ SUBCOMMANDS:
     search    Search macro(s) on a macro hub. e.g.: pastebin.com
 ```
 
-##### Examples:
+### Examples:
 create a short macro command
 ```sh
 $ shortcut-cli macro create --content 'git pull origin master' --key gpom
@@ -159,7 +163,8 @@ docker rm $(docker ps -a -q)
 
 Oct 30 13:58:41.331 INFO success
 ```
-##### How to the shortcut-cli config?
+
+### How to the shortcut-cli config?
 The shortcut-cli yaml config is located at `$HOME/.shortcut-cli/config.yml`
 There is an `config.yml.example` in the repository, lets try it
 ```sh
@@ -169,7 +174,7 @@ hub_url: https://pastebin.com/raw/JsqSJABQ
 EOF
 ```
 
-##### Config parameters
+### Config parameters
 shortcut-cli is using YAML format for config.
 | Param | Default value |
 | ------ | ------ |
@@ -181,5 +186,5 @@ shortcut-cli is using YAML format for config.
 
  - I haven't todos yet
 
-##### License
+### License
 BSD

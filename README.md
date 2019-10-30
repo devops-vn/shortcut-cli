@@ -10,9 +10,7 @@ shortcut-cli is a simple shortcut cli to create a script as a short macro comman
 
 Download binary file for linux kernel:
 ```sh
-$ curl -s
-https://github.com/cuonglb/shortcut-cli/releases/download/v1.0.0/shortcut-cli
--o /usr/local/bin/shortcut-cli
+$ curl -s https://github.com/cuonglb/shortcut-cli/releases/download/v1.0.0/shortcut-cli -o /usr/local/bin/shortcut-cli
 $ chmod +x /usr/local/bin/shortcut-cli
 ```
 

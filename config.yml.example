@@ -1,0 +1,3 @@
+bash_header: "#!/bin/bash -e"
+bin_dir: /usr/local/bin
+hub_url: https://pastebin.com/raw/JsqSJABQ

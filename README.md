@@ -72,6 +72,7 @@ SUBCOMMANDS:
 ```
 
 ### Examples:
+
 create a short macro command
 ```sh
 $ shortcut-cli macro create --content 'git pull origin master' --key gpom
@@ -79,6 +80,7 @@ Oct 29 19:16:17.004 INFO macro create
 Oct 29 19:16:17.004 INFO save-or-update key=gpom value=git pull origin master
 Oct 29 19:16:17.004 INFO success
 ```
+
 delete a short macro command (requires sudo if it get `make-bash` generated)
 ```sh
 $ sudo shortcut-cli macro delete --key gpom
@@ -86,6 +88,7 @@ Oct 30 13:13:42.435 INFO macro delete
 Oct 30 13:13:42.435 INFO delete macro key=gpom
 Oct 30 13:13:42.437 INFO success
 ```
+
 listing all short macro commands
 ```sh
 $ shortcut-cli macro ls
@@ -93,12 +96,14 @@ Oct 29 19:18:11.769 INFO macro listing
 KEY                  CONTENT
 gpom                 git pull origin master
 ```
+
 make a bash script to run the short macro command (requires sudo)
 ```sh
 $ sudo shortcut-cli macro make-bash --key gpom
 Oct 29 19:20:06.670 INFO macro make bash
 Oct 29 19:20:06.671 INFO make bash script for macro key=gpom
 ```
+
 now you can just run gpom command from a git repository :)
 ```bash
 $ gpom
@@ -106,6 +111,7 @@ From github.com:foo/bar
  * branch              master     -> FETCH_HEAD
 Already up to date.
 ```
+
 create a ton of short macro commands and share them with your friends :), i am using `pastebin.com` for to do that.
 
 ```sh
@@ -121,6 +127,7 @@ gpom:
 df-G:
   content: df -BG
 ```
+
 search a short macro command from a macro hub like `https://pastebin.com/raw/JsqSJABQ`
 ```sh
 $ shortcut-cli macro hub search --key "*"
@@ -165,7 +172,9 @@ Oct 30 13:58:41.331 INFO success
 ```
 
 ### How to the shortcut-cli config?
+
 The shortcut-cli yaml config is located at `$HOME/.shortcut-cli/config.yml`
+
 There is an `config.yml.example` in the repository, lets try it
 ```sh
 $ mkdir -p ~/.shortcut-cli
@@ -175,13 +184,16 @@ EOF
 ```
 
 ### Config parameters
+
 shortcut-cli is using YAML format for config.
+
 | Param | Default value |
 | ------ | ------ |
-| bash_header | "#!/bin/bash -e" |
+| bash_header | `"#!/bin/bash -e"` |
 | bin_dir | /usr/local/bin |
 | log_type | term |
 | hub_url | https://pastebin.com/raw/Eqi7uExx |
+
 ##### Todos
 
  - I haven't todos yet

@@ -10,12 +10,15 @@ shortcut-cli is a simple shortcut cli to create a script as a short macro comman
 
 Download binary file for linux kernel:
 ```sh
-curl -s
+$ curl -s
+https://github.com/cuonglb/shortcut-cli/releases/download/v1.0.0/shortcut-cli
+-o /usr/local/bin/shortcut-cli
+$ chmod +x /usr/local/bin/shortcut-cli
 ```
 
 Download package installer for darwin kernel (macOS):
 ```sh
-curl -s
+$ wget https://github.com/cuonglb/shortcut-cli/releases/download/v1.0.0/shortcut-cli-macos-installer-x64-1.0.0.pkg
 ```
 
 Build from source:
@@ -27,8 +30,8 @@ Build from source:
 > Install GNU make.
 
 ```sh
-cd $shortcut-cli
-make
+$ cd shortcut-cli
+$ make
 ```
 
 ### How to use shortcut-cli?
